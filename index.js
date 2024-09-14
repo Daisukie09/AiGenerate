@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h1>FLUX Image Generator</h1>
+          <h1>FLUX Image Generator By Vincent Magtolis</h1>
           <p>Enter a prompt to generate an image:</p>
           <input type="text" id="prompt" placeholder="Enter your prompt here..." />
           <button onclick="generateImage()">Generate Image</button>
