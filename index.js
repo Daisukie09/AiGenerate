@@ -16,7 +16,7 @@ function getRandomSeed() {
 
 async function query(data) {
   const response = await axios.post(
-    'https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev',
+    'https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-schnell',
     data,
     {
       headers: {
@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <div class="container">
-          <h1>FLUX Image Generator By Vincent Magtolis</h1>
+          <h1>FLUX Image Generator</h1>
           <p>Enter a prompt to generate an image:</p>
           <input type="text" id="prompt" placeholder="Enter your prompt here..." />
           <button onclick="generateImage()">Generate Image</button>
